@@ -1,6 +1,6 @@
 import React from "react";
 import videobanner from "../../assets/banner_header_play.png";
-import { Container } from "./styles";
+import { Container, TextWrap } from "./styles";
 import TextBlock from "../TextBlock";
 import videofigure from "../../assets/videofigure_1.png";
 
@@ -10,6 +10,10 @@ export default function About() {
       <div>
         <img src={videobanner} alt="" />
       </div>
+      <TextWrap>
+        <h2>Profissional de Educação Física</h2>
+        <h3>Por uma questão de saúde</h3>
+      </TextWrap>
       <TextBlock image={videofigure} reversed={false}>
         <p>
           Cada dia mais brasileiros vêm praticando atividades
