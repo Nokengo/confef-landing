@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
   
   html{
     height: 100%;
+    font-family: 'Poppins', sans-serif;
     body{
       height: 100%;
       #root{
