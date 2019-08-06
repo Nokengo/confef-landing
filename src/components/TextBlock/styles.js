@@ -17,7 +17,9 @@ export const Wrapp = styled.div`
       }
     }
     :last-child {
-      width: 35vw;
+      width: 55vw;
+      display: flex;
+      justify-content: center;
     }
   }
   article {

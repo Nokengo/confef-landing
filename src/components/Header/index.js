@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../../assets/logo.png";
-import webdoor from "../../assets/banner_header_play.png";
 import { Container } from "./styles";
 
 export default function Header() {
@@ -12,27 +11,47 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <a href="#" target="_blank">
+            <a
+              href="http://google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Campanha
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
+            <a
+              href="http://google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Questão de saúde
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
+            <a
+              href="http://google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Atuação
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
+            <a
+              href="http://google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Making Of
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
+            <a
+              href="http://google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Contato
             </a>
           </li>

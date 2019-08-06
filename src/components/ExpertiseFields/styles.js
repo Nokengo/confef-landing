@@ -7,7 +7,7 @@ export const Container = styled.div`
     background: url(${headerBg});
     background-repeat: no-repeat;
     background-size: 100vw;
-    min-height: 41vh;
+    min-height: 23.4vw;
   }
 `;
 
@@ -32,15 +32,18 @@ export const TextWrap = styled.div`
 `;
 
 export const SlickContainer = styled.div`
+display: flex;
   background: url('${slickBg}');
   padding: 3.3vw 0 3.9vw;
+  justify-content: space-between;
+  width: 100%;
   article {
+    padding-top: 1vw;
     background: #fff;
     width: 33.8vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:
   }
   img {
     width: 31vw;
