@@ -13,7 +13,7 @@ export const Wrapp = styled.div`
   justify-content: space-between;
   flex-direction: ${props => (props.reversed ? "row-reverse" : "row")};
   @media only screen and (max-width: 768px) {
-    flex-direction: column-reverse;
+    flex-direction: ${props => (props.reversed ? "column" : "column-reverse")};
     align-items: center;
     padding: 0 5vw;
   }

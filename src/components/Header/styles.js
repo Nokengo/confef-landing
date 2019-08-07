@@ -31,7 +31,7 @@ export const Container = styled.header`
       width: 12.3vw;
       height: 12vw;
       background: url(${mobileMenu});
-      background-size: 38px;
+      background-size: 30px;
       background-position: center;
       background-repeat: no-repeat;
     }

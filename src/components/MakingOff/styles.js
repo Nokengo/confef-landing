@@ -18,6 +18,9 @@ export const TextWrap = styled.div`
     display: inline;
     color: #000;
     margin-right: 1vw;
+    @media only screen and (max-width: 768px) {
+      font-size: 14vw;
+    }
   }
   h3 {
     font-size: 6.25vw;
@@ -26,5 +29,8 @@ export const TextWrap = styled.div`
     color: #e30613;
     letter-spacing: 1vw;
     display: inline;
+    @media only screen and (max-width: 768px) {
+      font-size: 14vw;
+    }
   }
 `;

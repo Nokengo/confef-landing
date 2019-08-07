@@ -10,7 +10,7 @@ export const Container = styled.div`
     @media only screen and (max-width: 768px) {
       display: none;
     }
-    :last-child {
+    :nth-child(2) {
       display: none;
       @media only screen and (max-width: 768px) {
         display: block;

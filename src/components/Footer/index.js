@@ -1,8 +1,11 @@
 import React from "react";
 import footerLogo from "../../assets/footer_logo.png";
 import fbIcon from "../../assets/fbicon.png";
+import igIcon from "../../assets/igicon.png";
+import twtIcon from "../../assets/twticon.png";
+import ytIcon from "../../assets/yticon.png";
 
-import { Container, MediaWrap } from "./styles";
+import { Container, MediaWrap, ContactLinks } from "./styles";
 
 export default function Footer() {
   return (
@@ -10,7 +13,7 @@ export default function Footer() {
       <div>
         <img src={footerLogo} alt="" />
       </div>
-      <div>
+      <ContactLinks>
         <p>
           <a href="http://google.com" target="_blank" rel="noopener noreferrer">
             Consulte os Inscritos
@@ -31,13 +34,13 @@ export default function Footer() {
             Contato
           </a>
         </p>
-      </div>
+      </ContactLinks>
       <MediaWrap>
         <div>
           <img src={fbIcon} alt="" />
-          <img src={fbIcon} alt="" />
-          <img src={fbIcon} alt="" />
-          <img src={fbIcon} alt="" />
+          <img src={igIcon} alt="" />
+          <img src={twtIcon} alt="" />
+          <img src={ytIcon} alt="" />
         </div>
         <div>
           <p>
