@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   padding-bottom: 19vw;
+  @media only screen and (max-width: 768px) {
+    padding-bottom: 0;
+  }
   img {
     width: 99.7vw;
     @media only screen and (max-width: 768px) {

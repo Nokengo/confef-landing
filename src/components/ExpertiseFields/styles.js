@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import headerBg from "../../assets/action_banner.png";
+import headerBgm from "../../assets/action_banner_m.png";
 import slickBg from "../../assets/bgslick.png";
 
 export const Container = styled.div`
@@ -8,6 +9,11 @@ export const Container = styled.div`
     background-repeat: no-repeat;
     background-size: 100vw;
     min-height: 23.4vw;
+    @media only screen and (max-width: 768px) {
+      background: url(${headerBgm});
+      min-height: 350px;
+      background-size: 100%;
+    }
   }
 `;
 
@@ -15,12 +21,20 @@ export const TextWrap = styled.div`
   text-align: center;
   line-height: 5.4vw;
   padding-top: 1.8vw;
+  @media only screen and (max-width: 768px) {
+    line-height: 13.4vw;
+    padding-top: 6.8vw;
+  }
   h2 {
     font-size: 3.8vw;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1.1vw;
     color: #000;
+    @media only screen and (max-width: 768px) {
+      font-size: 10.8vw;
+      letter-spacing: 4.8px;
+    }
   }
   h3 {
     font-size: 5.5vw;
@@ -28,6 +42,9 @@ export const TextWrap = styled.div`
     font-weight: 700;
     color: #e30613;
     letter-spacing: 0.5vw;
+    @media only screen and (max-width: 768px) {
+      font-size: 14.5vw;
+    }
   }
 `;
 
