@@ -8,6 +8,8 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 1.8vw 8.8vw 1vw;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 4px 0px;
   @media only screen and (max-width: 768px) {
     padding: 20px;
   }
