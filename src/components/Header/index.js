@@ -6,7 +6,7 @@ export default class Header extends Component {
   state = {
     hidden: true
   };
-  componentWillMount() {
+  handleScroll() {
     window.addEventListener("scroll", this.handleScroll);
   }
 
