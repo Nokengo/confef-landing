@@ -1,5 +1,4 @@
 import React from "react";
-import videobanner from "../../assets/banner_header_play.png";
 import { Container, TextWrap } from "./styles";
 import TextBlock from "../TextBlock";
 import videofigure from "../../assets/videofigure_2.png";

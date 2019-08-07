@@ -1,5 +1,6 @@
 import React from "react";
 import videobanner from "../../assets/banner_header_play.png";
+import videobannermobile from "../../assets/header_banner_mobile.png";
 import { Container, TextWrap } from "./styles";
 import TextBlock from "../TextBlock";
 import videofigure from "../../assets/videofigure_1.png";
@@ -9,6 +10,7 @@ export default function About() {
     <Container>
       <div>
         <img src={videobanner} alt="" />
+        <img src={videobannermobile} alt="" />
       </div>
       <TextWrap>
         <h2>Profissional de Educação Física</h2>
@@ -16,7 +18,7 @@ export default function About() {
       </TextWrap>
       <TextBlock image={videofigure} reversed={false}>
         <p>
-          Cada dia mais brasileiros vêm praticando atividades
+          Cada dia mais brasileiros vêm praticando atividades&nbsp;
           <br />
           físicas nos últimos anos. Isso é muito bom. Mas, além de
           <br /> evitar o sedentarismo, também é preciso ter a orientação
