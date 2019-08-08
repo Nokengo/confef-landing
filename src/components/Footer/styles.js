@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   padding: 4.6vw 12vw 4.6vw 13vw;
   justify-content: space-between;

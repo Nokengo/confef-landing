@@ -5,11 +5,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import slickFigure from "../../assets/fgrmc.png";
 
-import { Item, Content, Header, Footer } from "./styles";
+import { Container, Item, Content, Header, Footer, Button } from "./styles";
 
 export default class SimpleSlider extends Component {
   render() {
     const settings = {
+      dots: true,
+      arrows: false,
       className: "center",
       centerMode: true,
       infinite: true,
@@ -28,8 +30,7 @@ export default class SimpleSlider extends Component {
     };
 
     return (
-      <div>
-        <h2> Single Item</h2>
+      <Container>
         <Slider {...settings}>
           <Item>
             <Content>
@@ -37,12 +38,15 @@ export default class SimpleSlider extends Component {
                 <img src={slickFigure} alt="" />
               </Header>
               <Footer>
-                <p>Crianças que praticam atividades físicas com orientação adequada de um Profissional de Educação Física nas escolas desenvolvem o senso de coletividade, o foco, a disciplina e ainda melhoram a capacidade cognitiva.</p>
                 <p>
-                  <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                    Assista
-                  </a>
+                  Crianças que praticam atividades físicas com orientação
+                  adequada de um Profissional de Educação Física nas escolas
+                  desenvolvem o senso de coletividade, o foco, a disciplina e
+                  ainda melhoram a capacidade cognitiva.
                 </p>
+                <Button href="http://google.com" target="_blank">
+                  Assista
+                </Button>
               </Footer>
             </Content>
           </Item>
@@ -53,12 +57,15 @@ export default class SimpleSlider extends Component {
                 <img src={slickFigure} alt="" />
               </Header>
               <Footer>
-                <p>Crianças que praticam atividades físicas com orientação adequada de um Profissional de Educação Física nas escolas desenvolvem o senso de coletividade, o foco, a disciplina e ainda melhoram a capacidade cognitiva.</p>
                 <p>
-                  <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                    Assista
-                  </a>
+                  Crianças que praticam atividades físicas com orientação
+                  adequada de um Profissional de Educação Física nas escolas
+                  desenvolvem o senso de coletividade, o foco, a disciplina e
+                  ainda melhoram a capacidade cognitiva.
                 </p>
+                <Button href="http://google.com" target="_blank">
+                  Assista
+                </Button>
               </Footer>
             </Content>
           </Item>
@@ -69,12 +76,15 @@ export default class SimpleSlider extends Component {
                 <img src={slickFigure} alt="" />
               </Header>
               <Footer>
-                <p>Crianças que praticam atividades físicas com orientação adequada de um Profissional de Educação Física nas escolas desenvolvem o senso de coletividade, o foco, a disciplina e ainda melhoram a capacidade cognitiva.</p>
                 <p>
-                  <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                    Assista
-                  </a>
+                  Crianças que praticam atividades físicas com orientação
+                  adequada de um Profissional de Educação Física nas escolas
+                  desenvolvem o senso de coletividade, o foco, a disciplina e
+                  ainda melhoram a capacidade cognitiva.
                 </p>
+                <Button href="http://google.com" target="_blank">
+                  Assista
+                </Button>
               </Footer>
             </Content>
           </Item>
@@ -85,12 +95,15 @@ export default class SimpleSlider extends Component {
                 <img src={slickFigure} alt="" />
               </Header>
               <Footer>
-                <p>Crianças que praticam atividades físicas com orientação adequada de um Profissional de Educação Física nas escolas desenvolvem o senso de coletividade, o foco, a disciplina e ainda melhoram a capacidade cognitiva.</p>
                 <p>
-                  <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                    Assista
-                  </a>
+                  Crianças que praticam atividades físicas com orientação
+                  adequada de um Profissional de Educação Física nas escolas
+                  desenvolvem o senso de coletividade, o foco, a disciplina e
+                  ainda melhoram a capacidade cognitiva.
                 </p>
+                <Button href="http://google.com" target="_blank">
+                  Assista
+                </Button>
               </Footer>
             </Content>
           </Item>
@@ -101,17 +114,20 @@ export default class SimpleSlider extends Component {
                 <img src={slickFigure} alt="" />
               </Header>
               <Footer>
-                <p>Crianças que praticam atividades físicas com orientação adequada de um Profissional de Educação Física nas escolas desenvolvem o senso de coletividade, o foco, a disciplina e ainda melhoram a capacidade cognitiva.</p>
                 <p>
-                  <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                    Assista
-                  </a>
+                  Crianças que praticam atividades físicas com orientação
+                  adequada de um Profissional de Educação Física nas escolas
+                  desenvolvem o senso de coletividade, o foco, a disciplina e
+                  ainda melhoram a capacidade cognitiva.
                 </p>
+                <Button href="http://google.com" target="_blank">
+                  Assista
+                </Button>
               </Footer>
             </Content>
           </Item>
         </Slider>
-      </div>
+      </Container>
     );
   }
 }

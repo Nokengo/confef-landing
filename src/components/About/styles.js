@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding-bottom: 19vw;
+  padding-bottom: 10vw;
+  padding-top: 9vw;
   @media only screen and (max-width: 768px) {
     padding-bottom: 0;
   }
   img {
-    width: 99.7vw;
+    width: 100%;
     @media only screen and (max-width: 768px) {
       display: none;
     }
@@ -20,7 +21,7 @@ export const Container = styled.div`
 `;
 export const TextWrap = styled.div`
   text-align: center;
-  margin-top: 14.5vw;
+  padding-top: 14.5vw;
   line-height: 3.7vw;
   @media only screen and (max-width: 768px) {
     margin-top: 2vw;

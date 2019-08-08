@@ -7,12 +7,12 @@ import videofigure from "../../assets/videofigure_1.png";
 
 export default function About() {
   return (
-    <Container>
+    <Container id="campanha">
       <div>
         <img src={videobanner} alt="" />
         <img src={videobannermobile} alt="" />
       </div>
-      <TextWrap>
+      <TextWrap id="questao-saude">
         <h2>Profissional de Educação Física</h2>
         <h3>Por uma questão de saúde</h3>
       </TextWrap>

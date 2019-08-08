@@ -9,7 +9,7 @@ import { Container, MediaWrap, ContactLinks } from "./styles";
 
 export default function Footer() {
   return (
-    <Container>
+    <Container id="contato">
       <div>
         <img src={footerLogo} alt="" />
       </div>

@@ -10,6 +10,7 @@ export const Container = styled.header`
   padding: 1.8vw 8.8vw 1vw;
   position: fixed;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 4px 0px;
+  z-index: 99;
   @media only screen and (max-width: 768px) {
     padding: 20px;
   }

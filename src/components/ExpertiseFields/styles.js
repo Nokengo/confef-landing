@@ -4,6 +4,7 @@ import headerBgm from "../../assets/action_banner_m.png";
 import slickBg from "../../assets/bgslick.png";
 
 export const Container = styled.div`
+  padding-top: 9vw;
   header {
     background: url(${headerBg});
     background-repeat: no-repeat;

@@ -6,7 +6,7 @@ import videofigure from "../../assets/videofigure_2.png";
 
 export default function MakingOff() {
   return (
-    <Container>
+    <Container id="making-of">
       <TextWrap>
         <h2>Making</h2>
         <h3>Off</h3>

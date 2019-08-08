@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../assets/logo.png";
 import { Container } from "./styles";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export default function Header() {
   return (
@@ -11,49 +12,19 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <a
-              href="http://google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Campanha
-            </a>
+            <AnchorLink href="#campanha">Campanha</AnchorLink>
           </li>
           <li>
-            <a
-              href="http://google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Questão de saúde
-            </a>
+            <AnchorLink href="#questao-saude">Questão de saúde</AnchorLink>
           </li>
           <li>
-            <a
-              href="http://google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Atuação
-            </a>
+            <AnchorLink href="#atuacao">Atuação</AnchorLink>
           </li>
           <li>
-            <a
-              href="http://google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Making Of
-            </a>
+            <AnchorLink href="#making-of">Making Of</AnchorLink>
           </li>
           <li>
-            <a
-              href="http://google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Contato
-            </a>
+            <AnchorLink href="#contato">Contato</AnchorLink>
           </li>
         </ul>
       </nav>

@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   padding-bottom: 5.2vw;
+  padding-top: 14.5vw;
   img {
     width: 99.7vw;
   }
 `;
 export const TextWrap = styled.div`
   text-align: center;
-  margin-top: 14.5vw;
+  /* margin-top: 14.5vw; */
   line-height: 3.7vw;
   h2 {
     font-size: 6.25vw;
