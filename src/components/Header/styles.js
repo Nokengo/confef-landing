@@ -27,7 +27,7 @@ export const Container = styled.header`
     }
   }
   nav {
-    width: 49.3vw;
+    width: 100%;
     text-transform: uppercase;
     font-weight: 700;
 
