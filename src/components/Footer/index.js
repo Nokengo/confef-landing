@@ -5,6 +5,8 @@ import igIcon from "../../assets/igicon.png";
 import twtIcon from "../../assets/twticon.png";
 import ytIcon from "../../assets/yticon.png";
 
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 import { Container, MediaWrap, ContactLinks } from "./styles";
 
 export default function Footer() {
@@ -15,32 +17,50 @@ export default function Footer() {
       </div>
       <ContactLinks>
         <p>
-          <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.confef.org.br/confef/registrados/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Consulte os Inscritos
           </a>
         </p>
         <p>
-          <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.confef.org.br/confef/resolucoes/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Legislação
           </a>
         </p>
         <p>
-          <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-            Onde estamos
-          </a>
-        </p>
-        <p>
-          <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.confef.org.br/confef/fale-conosco/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Contato
           </a>
         </p>
       </ContactLinks>
       <MediaWrap>
         <div>
-          <img src={fbIcon} alt="" />
-          <img src={igIcon} alt="" />
-          <img src={twtIcon} alt="" />
-          <img src={ytIcon} alt="" />
+          <a href="https://www.facebook.com/confef/" target="_blank">
+            <img src={fbIcon} alt="" />
+          </a>
+          <a href="https://www.instagram.com/confef/" target="_blank">
+            <img src={igIcon} alt="" />
+          </a>
+          <a href="https://twitter.com/confef/" target="_blank">
+            <img src={twtIcon} alt="" />
+          </a>
+          <a
+            href="https://www.youtube.com/user/SistemaCONFEFCREFs"
+            target="_blank"
+          >
+            <img src={ytIcon} alt="" />
+          </a>
         </div>
         <div>
           <p>

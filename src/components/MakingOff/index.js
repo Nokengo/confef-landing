@@ -9,7 +9,7 @@ export default function MakingOff() {
     <Container id="making-of">
       <TextWrap>
         <h2>Making</h2>
-        <h3>Off</h3>
+        <h3>Of</h3>
       </TextWrap>
       <TextBlock image={videofigure} reversed={true}>
         <p>
