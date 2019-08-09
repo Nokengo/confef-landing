@@ -76,6 +76,7 @@ export const MediaWrap = styled.div`
     }
     img {
       width: 3.2vw;
+      margin: 0 0.5vw;
       @media only screen and (max-width: 768px) {
         width: 15%;
         margin-bottom: 10px;
