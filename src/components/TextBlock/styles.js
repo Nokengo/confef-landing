@@ -46,9 +46,11 @@ export const Wrapp = styled.div`
       color: #666666;
       font-size: 0.9vw;
       line-height: 1.9vw;
+      padding: 0 7vw;
       @media only screen and (max-width: 768px) {
         font-size: 3.5vw;
         line-height: 35px;
+        padding: 0.2vw;
         br {
           display: none;
         }

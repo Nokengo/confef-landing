@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import TextBlock from "../TextBlock";
 
 export const Container = styled.div`
   padding-bottom: 10vw;
@@ -52,3 +53,5 @@ export const TextWrap = styled.div`
     }
   }
 `;
+
+export const TextBox = styled(TextBlock)``;
