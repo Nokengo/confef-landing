@@ -3,6 +3,7 @@ import { GlobalStyle } from "./globals/globalStyle";
 import Home from "./pages/Home";
 import TagManager from "react-gtm-module";
 import ReactPixel from "react-facebook-pixel";
+import "video-react/dist/video-react.css";
 
 const tagManagerArgs = {
   gtmId: "GTM-P8SQN47"

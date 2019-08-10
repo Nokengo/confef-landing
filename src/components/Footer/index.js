@@ -13,7 +13,9 @@ export default function Footer() {
   return (
     <Container id="contato">
       <div>
-        <img src={footerLogo} alt="" />
+        <a href="https://confef.org.br" target="_blank">
+          <img src={footerLogo} alt="" />
+        </a>
       </div>
       <ContactLinks>
         <p>
@@ -47,24 +49,24 @@ export default function Footer() {
       <MediaWrap>
         <div>
           <a href="https://www.facebook.com/confef/" target="_blank">
-            <img src={fbIcon} alt="" />
+            <img src={fbIcon} alt="" style={{ width: "2.6vw" }} />
           </a>
           <a href="https://www.instagram.com/confef/" target="_blank">
-            <img src={igIcon} alt="" />
+            <img src={igIcon} alt="" style={{ width: "2.6vw" }} />
           </a>
           <a href="https://twitter.com/confef/" target="_blank">
-            <img src={twtIcon} alt="" />
+            <img src={twtIcon} alt="" style={{ width: "2.6vw" }} />
           </a>
           <a
             href="https://www.youtube.com/user/SistemaCONFEFCREFs"
             target="_blank"
           >
-            <img src={ytIcon} alt="" />
+            <img src={ytIcon} alt="" style={{ width: "2.6vw" }} />
           </a>
         </div>
         <div>
           <p>
-            profissiona de educação física
+            profissional de educação física
             <br /> a orientação que faz a diferença
           </p>
           <p>2018 - brick e confef - todos os direitos reservasos</p>

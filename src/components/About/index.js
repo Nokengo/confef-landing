@@ -4,13 +4,17 @@ import videobannermobile from "../../assets/header_banner_mobile.png";
 import { Container, TextWrap, TextBox } from "./styles";
 
 import videofigure from "../../assets/videofigure_1.png";
+import videoAbertura from "../../assets/video_abertura.mp4";
+
+import { Player } from "video-react";
 
 export default function About() {
   return (
     <Container id="campanha">
       <div>
-        <img src={videobanner} alt="" />
-        <img src={videobannermobile} alt="" />
+        {/* <img src={videobanner} alt="" />
+        <img src={videobannermobile} alt="" /> */}
+        <Player poster={videobanner} src={videoAbertura} />
       </div>
       <TextWrap id="questao-saude">
         <h2>Profissional de Educação Física</h2>

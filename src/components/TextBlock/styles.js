@@ -48,11 +48,11 @@ export const Wrapp = styled.div`
       line-height: 1.9vw;
       padding: 0 7vw;
       @media only screen and (max-width: 768px) {
-        font-size: 3.5vw;
+        font-size: 3.3vw;
         line-height: 35px;
         padding: 0.2vw;
         br {
-          display: none;
+          /* display: none; */
         }
       }
       :nth-child(2) {

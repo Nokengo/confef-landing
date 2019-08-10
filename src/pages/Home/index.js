@@ -14,7 +14,7 @@ export default class Home extends Component {
         <Header />
         <About />
         <ExpertiseFields />
-        <MakingOff />
+        {/* <MakingOff /> */}
         <Footer />
       </Container>
     );
