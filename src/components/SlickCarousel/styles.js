@@ -45,6 +45,11 @@ export const Footer = styled.div`
     line-height: 1.4vw;
     text-transform: uppercase;
     margin-bottom: 1.3vw;
+
+    @media (max-width: 700px) {
+      font-size: 2.4vw;
+      line-height: 3.5vw;
+    }
   }
 `;
 
@@ -63,4 +68,10 @@ export const Button = styled.a`
   letter-spacing: 0.3vw;
   line-height: 2.5vw;
   font-size: 0.9vw;
+
+  @media (max-width: 700px) {
+    font-size: 2.5vw;
+    width: 21.3vw;
+    padding: 2vw 0vw;
+  }
 `;
