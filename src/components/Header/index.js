@@ -16,8 +16,13 @@ export default class Header extends Component {
     }
   };
   render() {
+    console.log(this.props.visible);
     return (
-      <Container show={this.state.show} onClick={this.handleButton}>
+      <Container
+        show={this.state.show}
+        visible={this.props.visible}
+        onClick={this.handleButton}
+      >
         <HeaderBox>
           <img src={logo} alt="" />
           <Button onCLick={this.handleButton} />

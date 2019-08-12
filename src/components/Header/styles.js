@@ -11,8 +11,10 @@ export const Container = styled.header`
   position: fixed;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 4px 0px;
   z-index: 99;
+  transition: all 1s;
   @media only screen and (max-width: 768px) {
     padding: 20px;
+    top: ${props => (props.visible ? "0" : "-30vw")};
   }
   img {
     width: 21vw;
