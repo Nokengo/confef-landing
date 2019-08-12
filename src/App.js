@@ -6,7 +6,7 @@ import ReactPixel from "react-facebook-pixel";
 import "video-react/dist/video-react.css";
 
 const tagManagerArgs = {
-  gtmId: "GTM-P8SQN47"
+  gtmId: "GTM-MMPL9Z8"
 };
 
 TagManager.initialize(tagManagerArgs);
