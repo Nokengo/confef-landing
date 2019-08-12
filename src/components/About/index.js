@@ -20,7 +20,7 @@ export default function About() {
         <h2>Profissional de Educação Física</h2>
         <h3>Por uma questão de saúde</h3>
       </TextWrap>
-      <TextBox image={videofigure} reversed={false}>
+      <TextBox video={"WHcMQZ0WOy4"} reversed={false}>
         <p>
           Cada dia mais brasileiros vêm praticando atividades físicas. Isso é
           muito bom. Mas, além de evitar o sedentarismo, também é preciso ter a

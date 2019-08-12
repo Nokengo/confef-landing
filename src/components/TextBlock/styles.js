@@ -30,6 +30,9 @@ export const Wrapp = styled.div`
           margin-top: 35px;
         }
       }
+      iframe {
+        width: 100%;
+      }
     }
     :last-child {
       width: 55vw;
