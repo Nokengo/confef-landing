@@ -9,6 +9,8 @@ import banner1 from "../../assets/banner1.png";
 
 import { Container, Item, Content, Header, Footer, Button } from "./styles";
 
+import YouTube from "react-youtube";
+
 export default class SimpleSlider extends Component {
   state = {
     items: [
@@ -16,45 +18,65 @@ export default class SimpleSlider extends Component {
         image: "http://i3.ytimg.com/vi/zDpyKtrAYhw/maxresdefault.jpg",
         text:
           "As atividades do Profissional de Educação Física são diversas como, por exemplo, integrar equipes multidisciplinares em hospitais, auxiliando pacientes em preparação para tratamentos ou em recuperação.",
-        url: "https://youtu.be/zDpyKtrAYhw"
+        videoId: "zDpyKtrAYhw",
+        player: ""
       },
       {
         image: banner1,
         text:
           "Muita gente não sabe, mas a prática de corridas deve ser orientada e observada por um Profissional de Educação Física. Assim, além de evitar possíveis lesões, o praticante tem mais controle sobre a sua capacidade respiratória.",
-        url: "https://youtu.be/SjcOLwV1ivo"
+        videoId: "SjcOLwV1ivo",
+        player: ""
       },
       {
         image: "http://i3.ytimg.com/vi/WHcMQZ0WOy4/maxresdefault.jpg",
         text:
           "Crianças que praticam atividades físicas com orientação adequada de um Profissional de Educação Física nas escolas desenvolvem o senso de coletividade, o foco, a disciplina e ainda melhoram a capacidade cognitiva.",
-        url: "https://youtu.be/WHcMQZ0WOy4"
+        videoId: "WHcMQZ0WOy4",
+        player: ""
       },
       {
         image: "http://i3.ytimg.com/vi/YW0rU-uCEYg/maxresdefault.jpg",
         text:
           "Além de fazer bem ao corpo, a prática de exercícios físicos com um Profissional de Educação Física traz outros benefícios como acolhimento e inclusão.",
-        url: "https://youtu.be/YW0rU-uCEYg"
+        videoId: "YW0rU-uCEYg",
+        player: ""
       },
       {
         image: "http://i3.ytimg.com/vi/cS2rQ71vKTc/maxresdefault.jpg",
         text:
           "A presença de um Profissional de Educação Física nas academias abre perspectivas para pessoas que precisam e devem praticar exercícios físicos, mas têm limitações corporais.",
-        url: "https://youtu.be/cS2rQ71vKTc"
+        videoId: "cS2rQ71vKTc",
+        player: ""
       },
       {
         image: "http://i3.ytimg.com/vi/9fBJx0-Tqh4/maxresdefault.jpg",
         text:
           "O Profissional de Educação Física pode e deve estar presente na prática de exercícios físicos ao longo de toda a vida das pessoas, desde os primeiros anos.",
-        url: "https://youtu.be/9fBJx0-Tqh4"
+        videoId: "9fBJx0-Tqh4",
+        player: ""
       },
       {
         image: "http://i3.ytimg.com/vi/JtXTGjKF3RQ/maxresdefault.jpg",
         text:
           "Alegria, companheirismo, autoestima, bem-estar. O Profissional de Educação Física também pode ajudar a trazer muita diversão e qualidade de vida para a terceira idade.",
-        url: "https://youtu.be/JtXTGjKF3RQ"
+        videoId: "JtXTGjKF3RQ",
+        player: ""
       }
     ]
+  };
+
+  videoOnReady = (e, item) => {
+    item.player = e.target;
+    const items = [...this.state.items, item];
+    this.setState(items);
+  };
+
+  handleWatch = (e, item) => {
+    e.preventDefault();
+    console.log(item);
+    item.player.playVideo();
+    console.log(item.player.getCurrentTime());
   };
   render() {
     const settings = {
@@ -62,9 +84,10 @@ export default class SimpleSlider extends Component {
       arrows: false,
       className: "center",
       centerMode: true,
-      infinite: true,
+      infinite: false,
       centerPadding: "30%",
       slidesToShow: 1,
+      initialSlide: 2,
       speed: 500,
       responsive: [
         { breakpoint: 700, settings: { centerMode: false } },
@@ -81,14 +104,21 @@ export default class SimpleSlider extends Component {
       <Container>
         <Slider {...settings}>
           {this.state.items.map((item, index) => (
-            <Item>
+            <Item key={index}>
               <Content>
                 <Header>
-                  <img src={item.image} alt="" />
+                  {/* <img src={item.image} alt="" /> */}
+                  <YouTube
+                    videoId={item.videoId}
+                    onReady={e => this.videoOnReady(e, item)}
+                  />
                 </Header>
                 <Footer>
                   <p>{item.text}</p>
-                  <Button href={item.url} target="_blank">
+                  <Button
+                    target="_blank"
+                    onClick={e => this.handleWatch(e, item)}
+                  >
                     Assista
                   </Button>
                 </Footer>

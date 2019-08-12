@@ -25,7 +25,7 @@ export default class Header extends Component {
       >
         <HeaderBox>
           <img src={logo} alt="" />
-          <Button onCLick={this.handleButton} />
+          <Button onClick={this.handleButton} />
         </HeaderBox>
         <nav>
           <ul>

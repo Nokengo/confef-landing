@@ -37,6 +37,15 @@ export const Header = styled.div`
   img {
     width: 100%;
   }
+  iframe {
+    width: 100%;
+    min-height: 20vw;
+    @media (max-width: 700px) {
+      min-height: 40vw;
+    }
+    &.active {
+    }
+  }
 `;
 export const Footer = styled.div`
   margin: 1.8vw 0;
@@ -68,6 +77,7 @@ export const Button = styled.a`
   letter-spacing: 0.3vw;
   line-height: 2.5vw;
   font-size: 0.9vw;
+  cursor: pointer;
 
   @media (max-width: 700px) {
     font-size: 2.5vw;
