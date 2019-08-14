@@ -14,7 +14,7 @@ export default function About() {
       <div>
         {/* <img src={videobanner} alt="" />
         <img src={videobannermobile} alt="" /> */}
-        <Player poster={videobanner} src={videoAbertura} autoPlay muted />
+        <Player poster={videobanner} src={videoAbertura} autoPlay muted loop />
       </div>
       <TextWrap id="questao-saude">
         <h2>Profissional de Educação Física</h2>
