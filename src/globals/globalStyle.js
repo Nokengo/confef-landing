@@ -21,5 +21,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .video-react .video-react-big-play-button{ display: none !important; }
+  .video-react-control-bar{ display: none !important; }
   .video-react .video-react-poster{background-size: cover !important; }
 `;
