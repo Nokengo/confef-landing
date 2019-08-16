@@ -75,12 +75,13 @@ export const MediaWrap = styled.div`
       margin-top: 1.5vw;
     }
     img {
-      width: 3.2vw;
+      width: 2.6vw;
       margin: 0 0.5vw;
       @media only screen and (max-width: 768px) {
         width: 15%;
         margin-bottom: 10px;
         margin-top: 40px;
+        width: 7vw;
       }
       & + img {
         margin-left: 1.5vw;

@@ -23,4 +23,25 @@ export const GlobalStyle = createGlobalStyle`
   .video-react .video-react-big-play-button{ display: none !important; }
   .video-react-control-bar{ display: none !important; }
   .video-react .video-react-poster{background-size: cover !important; }
+  .slick-dots li.slick-active button::before{color: red !important;}
+  .slick-next{right: 4vw !important;
+      z-index: 999 !important;
+    &::before{
+      opacity: 1 !important;
+      color: gray !important;
+      @media(min-width: 700px){
+        font-size: 4vw !important;
+      }
+    }
+  }
+  .slick-prev{left: 4vw !important;
+      z-index: 999 !important;
+    &::before{
+      opacity: 1 !important;
+      color: gray !important;
+      @media(min-width: 700px){
+        font-size: 4vw !important;
+      }
+    }
+  }
 `;

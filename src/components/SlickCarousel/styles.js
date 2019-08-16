@@ -48,7 +48,8 @@ export const Header = styled.div`
   }
 `;
 export const Footer = styled.div`
-  margin: 1.8vw 0;
+  /* margin: 1.8vw 0; */
+
   p {
     font-size: 0.9vw;
     line-height: 1.4vw;
@@ -58,6 +59,7 @@ export const Footer = styled.div`
     @media (max-width: 700px) {
       font-size: 2.4vw;
       line-height: 3.5vw;
+      margin: 0 0 6.8vw;
     }
   }
 `;

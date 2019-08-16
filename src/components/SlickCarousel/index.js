@@ -81,7 +81,7 @@ export default class SimpleSlider extends Component {
   render() {
     const settings = {
       dots: true,
-      arrows: false,
+      arrows: true,
       className: "center",
       centerMode: true,
       infinite: false,

@@ -49,19 +49,19 @@ export default function Footer() {
       <MediaWrap>
         <div>
           <a href="https://www.facebook.com/confef/" target="_blank">
-            <img src={fbIcon} alt="" style={{ width: "2.6vw" }} />
+            <img src={fbIcon} alt="" />
           </a>
           <a href="https://www.instagram.com/confef/" target="_blank">
-            <img src={igIcon} alt="" style={{ width: "2.6vw" }} />
+            <img src={igIcon} alt="" />
           </a>
           <a href="https://twitter.com/confef/" target="_blank">
-            <img src={twtIcon} alt="" style={{ width: "2.6vw" }} />
+            <img src={twtIcon} alt="" />
           </a>
           <a
             href="https://www.youtube.com/user/SistemaCONFEFCREFs"
             target="_blank"
           >
-            <img src={ytIcon} alt="" style={{ width: "2.6vw" }} />
+            <img src={ytIcon} alt="" />
           </a>
         </div>
         <div>

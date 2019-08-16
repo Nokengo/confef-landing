@@ -6,6 +6,7 @@ export const Container = styled.div`
   padding-top: 9vw;
   @media only screen and (max-width: 768px) {
     padding-bottom: 0;
+    padding-top: 29vw;
   }
   img {
     width: 100%;
