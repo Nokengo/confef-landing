@@ -22,11 +22,14 @@ export default class About extends Component {
     e.target.playVideo();
     this.setState({ mainVideo: e.target });
   };
-
+  //1060x600
+  //1600/600 = 100/x
   render() {
+    console.log(window.innerWidth);
+    const player_height = window.innerWidth * 0.375;
     const opts = {
       width: "100%",
-      height: "800",
+      height: player_height + "px",
       playerVars: {
         // https://developers.google.com/youtube/player_parameters
         autoplay: 1,
