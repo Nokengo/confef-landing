@@ -40,13 +40,13 @@ export default function Footer() {
           </a>
         </p>
         <p>
-          <a
+          {/* <a
             href="https://www.confef.org.br/confef/fale-conosco/?utm_source=hotsite_confef"
             target="_blank"
             rel="noopener noreferrer"
           >
             Contato
-          </a>
+          </a> */}
         </p>
       </ContactLinks>
       <MediaWrap>

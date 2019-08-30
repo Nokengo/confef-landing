@@ -51,11 +51,11 @@ export default class Header extends Component {
                 Making Of
               </AnchorLink>
             </li> */}
-            <li>
+            {/* <li>
               <AnchorLink href="#contato" onClick={this.handleButton}>
                 Contato
               </AnchorLink>
-            </li>
+            </li> */}
           </ul>
           <CloseMobile onClick={this.handleButton}>x</CloseMobile>
         </nav>
