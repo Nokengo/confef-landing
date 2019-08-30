@@ -8,7 +8,7 @@ export default class Header extends Component {
     show: false
   };
   handleButton = e => {
-    e.preventDefault();
+    // e.preventDefault();
     if (this.state.show) {
       this.setState({ show: false });
     } else {
@@ -24,7 +24,9 @@ export default class Header extends Component {
         onClick={this.handleButton}
       >
         <HeaderBox>
-          <img src={logo} alt="" />
+          <a href="http://porumaquestaodesaude.com.br/">
+            <img src={logo} alt="" />
+          </a>
           <Button onClick={this.handleButton} />
         </HeaderBox>
         <nav>
@@ -44,11 +46,11 @@ export default class Header extends Component {
                 Atuação
               </AnchorLink>
             </li>
-            <li>
+            {/* <li>
               <AnchorLink href="#making-of" onClick={this.handleButton}>
                 Making Of
               </AnchorLink>
-            </li>
+            </li> */}
             <li>
               <AnchorLink href="#contato" onClick={this.handleButton}>
                 Contato

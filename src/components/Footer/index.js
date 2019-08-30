@@ -13,14 +13,17 @@ export default function Footer() {
   return (
     <Container id="contato">
       <div>
-        <a href="https://confef.org.br" target="_blank">
+        <a
+          href="https://confef.org.br/confef?utm_source=hotsite_confef"
+          target="_blank"
+        >
           <img src={footerLogo} alt="" />
         </a>
       </div>
       <ContactLinks>
         <p>
           <a
-            href="https://www.confef.org.br/confef/registrados/"
+            href="https://www.confef.org.br/confef/registrados/?utm_source=hotsite_confef"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -29,7 +32,7 @@ export default function Footer() {
         </p>
         <p>
           <a
-            href="https://www.confef.org.br/confef/resolucoes/"
+            href="https://www.confef.org.br/confef/resolucoes/?utm_source=hotsite_confef"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -38,7 +41,7 @@ export default function Footer() {
         </p>
         <p>
           <a
-            href="https://www.confef.org.br/confef/fale-conosco/"
+            href="https://www.confef.org.br/confef/fale-conosco/?utm_source=hotsite_confef"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -69,7 +72,7 @@ export default function Footer() {
             profissional de educação física
             <br /> a orientação que faz a diferença
           </p>
-          <p>2018 - brick e confef - todos os direitos reservasos</p>
+          <p>2019 - brick e confef - todos os direitos reservasos</p>
         </div>
       </MediaWrap>
     </Container>

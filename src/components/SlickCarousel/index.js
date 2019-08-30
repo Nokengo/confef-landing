@@ -36,10 +36,10 @@ export default class SimpleSlider extends Component {
         player: ""
       },
       {
-        image: "http://i3.ytimg.com/vi/YW0rU-uCEYg/maxresdefault.jpg",
+        image: "http://i3.ytimg.com/vi/UP6D6NmXqj0/maxresdefault.jpg",
         text:
           "Além de fazer bem ao corpo, a prática de exercícios físicos com um Profissional de Educação Física traz outros benefícios como acolhimento e inclusão.",
-        videoId: "YW0rU-uCEYg",
+        videoId: "UP6D6NmXqj0",
         player: ""
       },
       {
