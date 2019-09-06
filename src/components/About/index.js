@@ -44,7 +44,7 @@ export default class About extends Component {
           <img src={videobannermobile} alt="" /> */}
           {/* <Player poster={videobanner} src={videoAbertura} autoPlay muted loop /> */}
           <YouTube
-            videoId={"Pgq3dTL7lIk"}
+            videoId={"tZ508uGDFfU"}
             opts={opts}
             onReady={e => this.videoOnReady(e)}
           />
